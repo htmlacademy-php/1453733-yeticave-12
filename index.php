@@ -1,5 +1,5 @@
 <?php
-require 'functions.php';
+require __DIR__ . DIRECTORY_SEPARATOR . 'functions.php';
 
 $is_auth = rand(0, 1);
 $user_name = 'Alexander';
@@ -117,7 +117,7 @@ $products = [
                         <div class="lot__state">
                             <div class="lot__rate">
                                 <span class="lot__amount">Стартовая цена</span>
-                                <span class="lot__cost"><?php echo price_format($item['price']) ?></span>
+                                <span class="lot__cost"><?php echo format_price($item['price']) ?></span>
                             </div>
                             <div class="lot__timer timer">
                                 12:23

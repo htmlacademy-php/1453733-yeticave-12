@@ -1,5 +1,5 @@
 <?php
-    function price_format ($price) {
-        return number_format(ceil($price), 0, '', ' ') . " ₽";
-    }
-?>
+
+function format_price(float $price) {
+    return number_format(ceil($price), 0, ',', ' ') . ' ₽';
+}
