@@ -6,6 +6,7 @@
     $user_name = 'Alexander';
 
     $categories = ["Доски и лыжи", "Крепления", "Ботинки", "Одежда", "Инструменты", "Разное"];
+
     $products = [
         [
             "name" => "2014 Rossignol District Snowboard",
@@ -44,6 +45,7 @@
             "img_url" => "img/lot-6.jpg"
         ]
     ];
+
     $page_content = include_template('main.php', ['categories' => $categories, 'products' => $products]);
     $layout_content = include_template('layout.php', ['page_content' => $page_content, 'categories' => $categories, 'user_name' => $user_name, 'page_title' => 'Главная', 'is_auth' => $is_auth]);
     print($layout_content);
