@@ -5,7 +5,7 @@
         <!--заполните этот список из массива категорий-->
         <?php foreach($categories as $value): ?>
             <li class="promo__item promo__item--boards">
-                <a class="promo__link" href="pages/all-lots.html"><?=clear_spec($value)?></a>
+                <a class="promo__link" href="pages/all-lots.html"><?=clear_spec($value);?></a>
             </li>
         <?php endforeach; ?>
     </ul>
@@ -27,7 +27,7 @@
                     <div class="lot__state">
                         <div class="lot__rate">
                             <span class="lot__amount">Стартовая цена</span>
-                            <span class="lot__cost"><?php echo price_format(clear_spec($item['price'])) ?></span>
+                            <span class="lot__cost"><?php echo format_price(clear_spec($item['price'])) ?></span>
                         </div>
                         <div class="lot__timer timer">
                             12:23
