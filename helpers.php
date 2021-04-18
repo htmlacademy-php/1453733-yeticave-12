@@ -96,7 +96,6 @@ function db_get_prepare_stmt($link, $sql, $data = []) {
  *
  * @return string Рассчитанная форма множественнго числа
  */
-
 function get_noun_plural_form (int $number, string $one, string $two, string $many): string
 {
     $number = (int) $number;
