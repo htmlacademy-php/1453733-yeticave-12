@@ -48,4 +48,3 @@ $products = [
 $page_content = include_template('main.php', ['categories' => $categories, 'products' => $products]);
 $layout_content = include_template('layout.php', ['page_content' => $page_content, 'categories' => $categories, 'user_name' => $user_name, 'page_title' => 'Главная', 'is_auth' => $is_auth]);
 print($layout_content);
-

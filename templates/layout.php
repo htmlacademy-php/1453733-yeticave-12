@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title><?=clear_spec($page_title); ?></title>
+    <title><?=clear_spec($page_title) ?></title>
     <link href="../css/normalize.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
 </head>
@@ -22,9 +22,9 @@
             <a class="main-header__add-lot button" href="pages/add-lot.html">Добавить лот</a>
 
             <nav class="user-menu">
-                <?php if ($is_auth == 1): ?>
+                <?php if ($is_auth === 1): ?>
                     <div class="user-menu__logged">
-                        <p><?=clear_spec($user_name)?></p>
+                        <p><?=clear_spec($user_name) ?></p>
                         <a class="user-menu__bets" href="pages/my-bets.html">Мои ставки</a>
                         <a class="user-menu__logout" href="#">Выход</a>
                     </div>
@@ -42,7 +42,7 @@
         </div>
     </header>
     <main class="container">
-        <?=$page_content; ?>
+        <?=$page_content ?>
     </main>
 </div>
 
@@ -52,7 +52,7 @@
             <!--заполните этот список из массива категорий-->
             <?php foreach($categories as $value): ?>
                 <li class="nav__item">
-                    <a href="pages/all-lots.html"><?=clear_spec($value);?></a>
+                    <a href="pages/all-lots.html"><?=clear_spec($value) ?></a>
                 </li>
             <?php endforeach; ?>
         </ul>
